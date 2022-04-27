@@ -1,9 +1,12 @@
 <script>
+	import Elements from "./Elements.svelte"; 
 </script>
 
 <main>
 	<h1>A SHINY NEW APP</h1>
 </main>
+
+<Elements/>
 
 <style>
 	main {
