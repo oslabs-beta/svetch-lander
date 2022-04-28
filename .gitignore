@@ -30,5 +30,3 @@ jspm_packages/
 
 # Electron-Forge
 out/
-
-public/
