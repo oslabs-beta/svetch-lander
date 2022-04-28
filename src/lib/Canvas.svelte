@@ -1,10 +1,21 @@
 <main> 
     <div class="container">
-        <canvas id='dotCanvas'></canvas>
+        <label id = "switch">
+        <Switch bind:checked={toggled}></Switch>
+                <!-- <br>
+                {toggled} -->
+            </label>
+        <canvas id='dotCanvas'>
+            
+        </canvas>
     </div>
 </main>
 <script>
 import {onMount} from 'svelte'
+
+import Switch from './Switch.svelte';
+
+export let toggled = true;
 
 onMount(() =>{
     function getDocumentWidth() {
@@ -81,17 +92,21 @@ drawDots();
         border: 2px solid black;
         /* height: 40em; */
         height: 70vh;
-        width: 80%;
-        margin-left: 20%;
+        width: 75vw;
+        margin-left: 2%;
         border-radius: 15px;
 }
-
-    #dotCanvas
+#dotCanvas
     {
        
     display: block;
     height: 100%;
     width: 100%
-
     }
+#switch
+{
+position: absolute;
+right: 2vw;
+}
+
 </style>
