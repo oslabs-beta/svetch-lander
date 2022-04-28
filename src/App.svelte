@@ -1,13 +1,15 @@
 <script>
 	import Elements from "./Elements.svelte"; 
+  import Canvas from './lib/Canvas.svelte'
 </script>
 
 <main>
-	<h1>A SHINY NEW APP</h1>
-</main>
+
+
 
 <Elements/>
-
+<Canvas />
+</main>
 <style>
 	main {
 		text-align: center;
